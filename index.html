@@ -1,30 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Comandos Git</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Una guía interactiva para aprender comandos Git y trabajar con ramas."><title>theGebus | Diccionario Git</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
 <body>
-    <header>
-        <h1>Diccionario Git Interactiva</h1>
-        <p>Aprendiendo a trabajar con ramas</p>
-    </header>
-    <main id="contenedor">
-        <section class="comando">
-            <h2>git init</h2>
-            <p>Inicializa un nuevo repositorio local en la carpeta actual.</p>
-        </section>
-        <section class="comando">
-            <h2>git clone</h2>
-            <p>Descarga una copia exacta de un repositorio remoto.</p>
-        </section>
-        <section class="comando">
-            <h2>git add</h2>
-            <p>Prepara los cambios (staging) para ser incluidos en el próximo commit.</p>
-        </section>
-        <!-- Aquí los estudiantes agregarán más comandos luego -->
-    </main>
-</body>
-</html>
+<a class="skip" href="#biblioteca">Ir a los comandos</a>
+<header class="header"><a class="brand" href="#inicio"><img class="brand-logo" src="logo.png" alt="Logo oficial de theGebus"><span>theGebus<small>GIT KNOWLEDGE HUB</small></span></a><nav aria-label="Principal"><a href="#biblioteca">Comandos</a><a href="#practica">Guía de ramas</a><button class="theme" id="theme" aria-label="Activar tema claro">◐</button></nav></header>
+<main>
+<section class="hero wrap" id="inicio"><div class="hero-copy"><div class="eyebrow"><span></span> CONSTRUYE. COLABORA. EVOLUCIONA.</div><h1>Tu siguiente idea.<br>Tu siguiente <em>commit.</em></h1><p>Domina Git, organiza tus cambios y trabaja con ramas. Las herramientas que necesitas, en un solo lugar.</p><div class="hero-actions"><a class="primary" href="#biblioteca">Explorar comandos <span>↗</span></a><a class="secondary" href="#practica">Aprender con un ejemplo →</a></div><div class="hero-notes"><span>01 / Aprende a tu ritmo</span><span>02 / Lleva el código a la práctica</span></div></div>
+<div class="hero-visual"><div class="logo-stage"><img src="logo.png" alt="theGebus: símbolo coronado y nombre de la marca"><span>THEGEBUS / CENTRO DE APRENDIZAJE</span></div><div class="terminal" aria-label="Ejemplo de flujo de trabajo Git"><div class="terminal-head"><span class="dots">● ● ●</span><span>proyecto / terminal</span><span>⌘</span></div><div class="terminal-body"><p class="comment"># Una nueva idea empieza aquí</p><p><span class="prompt">❯</span> git switch -c nueva-idea</p><p class="output">Switched to a new branch 'nueva-idea'</p><p><span class="prompt">❯</span> git add .</p><p><span class="prompt">❯</span> git commit -m "Mi siguiente paso"</p><p class="output">[nueva-idea] Mi siguiente paso</p><div class="branch-art" aria-hidden="true"><span class="line main-line"></span><span class="line feature-line"></span><i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i><i class="dot d4"></i><span class="branch-label">main</span><span class="feature-label">nueva-idea</span></div><div class="terminal-foot"><span class="status-dot"></span> Cambios guardados en tu historial</div></div></div></div></section>
+<section class="library wrap" id="biblioteca"><div class="section-heading"><div><p class="eyebrow">TU CAJA DE HERRAMIENTAS</p><h2>Un comando. Una solución.</h2></div><span class="count" id="count" role="status"></span></div><div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Buscar un comando o una acción…" aria-label="Buscar comandos"><kbd>/</kbd></label><div class="filters" aria-label="Filtrar comandos"><button class="active" data-filter="Todos" aria-pressed="true">Todos</button><button data-filter="Inicio" aria-pressed="false">Inicio</button><button data-filter="Cambios" aria-pressed="false">Cambios</button><button data-filter="Ramas" aria-pressed="false">Ramas</button><button data-filter="Remotos" aria-pressed="false">Remotos</button></div></div><div id="cards" class="cards"></div><div id="empty" hidden>No encontramos ese comando. Prueba otra palabra o selecciona «Todos».</div></section>
+<section class="practice wrap" id="practica"><div class="practice-intro"><p class="eyebrow">DE LA TEORÍA A LA PRÁCTICA</p><h2>Una rama nueva.<br>Un camino claro.</h2><p>Recorre un flujo de trabajo paso a paso, desde tu primera rama hasta integrar los cambios.</p><span class="practice-note">Guía ilustrativa · No ejecuta comandos en tu equipo</span></div><div class="step-panel"><div class="steps" aria-label="Pasos de la guía"></div><p class="eyebrow" id="step-number"></p><h3 id="step-title"></h3><p id="step-description"></p><code id="step-code"></code><div class="step-actions"><button class="secondary" id="prev">← Anterior</button><button class="primary" id="next">Siguiente →</button></div></div></section>
+<section class="faq wrap"><div><p class="eyebrow">ANTES DE EMPEZAR</p><h2>Resuelve lo esencial.</h2></div><div><details><summary>¿Dónde escribo estos comandos?</summary><p>En Git Bash, PowerShell o la terminal de tu editor, con Git instalado. Abre la terminal dentro de la carpeta de tu proyecto.</p></details><details><summary>¿Cuál es la diferencia entre Git y GitHub?</summary><p>Git registra versiones en tu equipo. GitHub es un servicio para alojar repositorios remotos y colaborar con otras personas.</p></details><details><summary>¿Copiar un comando lo ejecuta?</summary><p>No. El botón solo copia el ejemplo. Revisa las rutas, nombres de ramas y archivos antes de pegarlo y ejecutarlo en tu terminal.</p></details></div></section>
+</main><footer class="wrap"><span><strong>theGebus</strong> / Diccionario Git</span><span>Aprende hoy. Construye lo que sigue.</span><a href="#inicio">Volver arriba ↑</a></footer><div id="toast" role="status" class="toast"></div>
+</body></html>
